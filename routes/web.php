@@ -37,6 +37,10 @@ Route::get('recensioni', function() {
 
     $data = [
         'name' => $name,
+        'nawOptions' => [
+            'home',
+            'review'
+        ],
     ];
 
     return view('review', $data);

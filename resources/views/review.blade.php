@@ -10,8 +10,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li><a href="{{route('review')}}">Review</a></li>
+                @foreach ($nawOptions as $nawOption)  
+                    <li><a href="{{route($nawOption)}}">{{$nawOption}}</a></li>              
+                @endforeach
             </ul>
         </nav>
     </header>
