@@ -7,22 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
                 <li><a href="{{route('home')}}">Home</a></li>
-                <li><a href="{{route('review')}}">Review</a></li>                
+                <li><a href="{{route('review')}}">Review</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <div>
-            <h1>hello World</h1>
-
-            <h2>Dinamic: {{ $dinamicText }}</h2>
-        </div>
+        <h2>{{$name}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium ullam beatae nihil sit, odit, placeat neque nam expedita eum molestiae reiciendis doloribus sint tempore quae facilis optio? Possimus, odio!</p>
     </main>
 </body>
 </html>

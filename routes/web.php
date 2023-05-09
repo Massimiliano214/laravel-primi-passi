@@ -16,10 +16,28 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $dinamicText = 'hello Laravel World';
+    $name = 'Samuel';
 
     $data = [
         'dinamicText' => $dinamicText,
+        'nawOptions' => [
+            'home',
+            'review'
+        ],
+        'name' => $name,
     ];
 
     return view('home', $data);
-});
+})->name('home');
+
+
+Route::get('recensioni', function() {
+
+    $name = 'Samuel';
+
+    $data = [
+        'name' => $name,
+    ];
+
+    return view('review', $data);
+})->name('review');
