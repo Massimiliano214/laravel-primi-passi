@@ -10,6 +10,8 @@
     <main>
         <div>
             <h1>hello World</h1>
+
+            <h2>Dinamic: {{ $dinamicText }}</h2>
         </div>
     </main>
 </body>

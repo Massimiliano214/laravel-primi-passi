@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $dinamicText = 'hello Laravel World';
+
+    $data = [
+        'dinamicText' => $dinamicText,
+    ];
+
+    return view('home', $data);
 });
